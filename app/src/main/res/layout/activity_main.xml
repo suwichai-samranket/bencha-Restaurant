@@ -7,10 +7,42 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.beenets.suwichai_s.bencharestaurant.MainActivity">
+    tools:context="com.beenets.suwichai_s.bencharestaurant.MainActivity"
+    android:background="@drawable/bg400">
 
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="@dimen/icon"
+            android:layout_height="@dimen/icon"
+            android:id="@+id/imageView"
+            android:src="@drawable/restaurant512" />
+
+        <EditText
+            android:layout_width="@dimen/edit"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:hint="User :"
+            android:inputType="text" />
+
+        <EditText
+            android:layout_width="@dimen/edit"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:hint="Password :"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true" />
 </RelativeLayout>
